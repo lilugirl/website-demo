@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Literata|Red+Hat+Display&display=swap');
+
+$serif: Literata,
+Georgia,
+Times New Roman,
+serif;
+$sans-serif: 'Red Hat Display',
+Helvetica,
+Arial,
+sans-serif;
+
+$black: hsla(3, 3, 3, 1.0);
+$orange: hsla(21, 89%, 53%, 1.0);
+$soft-pink: hsla(0, 29%, 95%, 1.0);
+$sage-green: hsla(51, 66%, 40%, 1.0);
+
+body {
+    background: $soft-pink;
+    padding: 3rem;
+}
+
+#skip a {
+    z-index: 9999;
+    transform: translateY(calc(-100% - 1rem));
+    display: block;
+    position: absolute;
+    left: -1.5rem;
+    top: -1.5rem;
+    height: 100px;
+    width: 100px;
+
+    &:focus {
+        transform: translateY(0);
+        transition: all 300ms ease-in-out;
+    }
+
+    // All below styling should be customised to fit your own site's brand.
+    background: $sage-green;
+    padding: 2rem;
+    border-radius: 100%;
+    color: black;
+    text-decoration: none;
+    font-family: $serif;
+}
+
+
+// All below styling is for background/conrtext styling only.
+.btn-primary {
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 100px;
+    border: 2px solid $sage-green;
+    color: $black;
+    font-family: $sans-serif;
+    text-decoration: none;
+}
+
+// Everything below is for background styling only. No need to copy.
+
+ul.nav-main {
+    font-family: $sans-serif;
+    list-style-type: none;
+
+    li {
+        display: inline-block;
+        margin: 0 3rem 0 0;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+        padding: 0 0 .5rem 0;
+        border-bottom: 1px solid $black;
+
+        &:hover {
+            border-bottom: 5px solid $sage-green;
+            transition: 200ms ease all;
+        }
+    }
+}
+
+.header-main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.nav-title {
+    font-family: $serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 1rem 0 0 0;
+}
+
+.hero-title {
+    font-family: $serif;
+    font-size: 4rem;
+    line-height: 1.1;
+    color: $black;
+}
+
+.block-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.btn-primary {
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 100px;
+    border: 2px solid $sage-green;
+    color: $black;
+    font-family: $sans-serif;
+    text-decoration: none;
+}
+
+.svg-fish {
+    padding: 1rem;
+    max-height: 75vh;
+}
